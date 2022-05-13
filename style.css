@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    
+    }
+
+
+
+.container {
+    text-align: center;
+}
+
+#arrow {
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;       
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./pexels-charlotte-may-5825599.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+
+}
+
+header ul {
+    display: flex;
+
+}
+
+header ul li{
+    padding: 10px;
+    list-style: none;
+}
+
+header ul li a:hover{
+    transition: 300ms;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    color: black;
+}
+.container .name h1 {
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.container .name h5 {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.form input {
+    width: 50%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    background-color: black;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.form button:hover {
+    width: 15%;
+    background-color: white;
+    border: none;
+    color: black;
+    transition: 300ms;
+}
+
+#logo {
+    max-width: 10%;
+    min-width: 10%;
+                }
+@media only screen and (max-widht: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+    .form {
+        width: 100%;
+    }
+}

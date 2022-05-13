@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1b9e023e1f.js" crossorigin="anonymous"></script>
+    <title>Ton Leal</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800;900&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <div>
+           <img id="logo" src="C:\Users\Pichau\Desktop\Projetos\ARQUITETURA E URBANISMO\HIRING CODERS\AQUECIMENTO\CSS\Portfólio.png" alt="logo">
+        </div>
+        <div>
+            <ul>
+                <li><a href=""> Github</a></li>
+                <li><a href="mailto:ton@tonleal.com"> E-mail</a></li>
+                <li><a href="wa.me/5581995419563"> Celular</a></li>
+            </ul>    
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>CLOVES</h1>
+                <h5>Arquiteto e Full-stack Developer</h5>
+            </div>
+            <div onclick="displayabout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angles-down"></i>
+            </div>
+            <div id="about">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas dolore omnis sapiente aspernatur eveniet.
+                </p>
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder=" Seu melhor email">
+                    <button>Enviar</button>
+                </form>
+            </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayabout() {
+            var arrow = document.getElementById('animation');
+            arrow.classlist.toggle('rotate');
+        }
+    </script>
+ 
+</body>
+</html>
